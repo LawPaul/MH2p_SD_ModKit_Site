@@ -49,8 +49,8 @@
                         </table>
                         <h5 class="card-title">Necessary Hardware</h5>
                         <ul>
-                            <li>SD card</li>
-                            <li>Computer that can connect to SD card</li>
+                            <li>update media (SD card or flash drive; see what your vehicle has available in the center console)</li>
+                            <li>Computer that can connect to update media</li>
                         </ul>
                         <h5 class="card-title">Download</h5>
                         <table class="table table-striped table-hover">
@@ -80,22 +80,34 @@
                         </table>
                         <h5 class="card-title">Setup</h5>
                         <ul>
-                            <li>format SD card as FAT32</li>
-                            <li>extract ModKit contents onto SD card</li>
-                            <li>note: <code>/Data</code> and <code>/Meta</code> must be at root of SD card</li>
+                            <li>format update media as FAT32</li>
+                            <li>extract ModKit contents onto update media</li>
+                            <li>note: <code>/Data</code> and <code>/Meta</code> must be at root of update media</li>
                             <li>Windows notes:
                                 <ul>
-                                    <li>right click the SD card, choose "Format", select "FAT32" from "File System," and choose "Start".</li>
+                                    <li>right click the update media, choose "Format", select "FAT32" from "File System," and choose "Start".</li>
                                 </ul>
                             </li>
                             <li>macOS notes:
                                 <ul>
-                                    <li>use the built-in Disk Utility app to format the SD Card to FAT32: Applications > Utilities > Disk Utility.</li>
-                                    <li>hidden files starting with "." are created automatically.</li>
-                                    <li>If these are present, you will see a more than one manifest file found error when trying to run the initial update through the red engineering menu. To get around this, you must delete these hidden files prior to removing the SD Card.</li>
-                                    <li>If you don't see the hidden files, press Command then Shift then . (period) to display them (they will show up slightly greyed out)</li>
-                                    <li>Delete the files (they all start with a period).</li>
-                                    <li>Remove the SD Card from the port physically. Do not use the eject function on finder; using the eject function adds the files in right before it is ejected.</li>
+                                    <li>use the built-in Disk Utility app to format the update media to FAT32: Applications > Utilities > Disk Utility.</li>
+                                    <li>hidden files starting with "." are created automatically; these must be removed or the auto update will not run
+                                        <ul>
+                                            <li>option A:
+                                                <ul>
+                                                    <li>use the free 30 day trial of <a target="_blank" href="https://www.zeroonetwenty.com/blueharvest/">BlueHarvest</a> to clean the update media immediately before physically removing it</li>
+                                                </ul>
+                                            </li>
+                                            <li>option B:
+                                                <ul>
+                                                    <li>manually delete these hidden files prior to removing the update media</li>
+                                                    <li>If you don't see the hidden files, press Command then Shift then . (period) to display them (they will show up slightly greyed out)</li>
+                                                    <li>delete the files (they all start with a period)</li>
+                                                    <li>Remove the update media from the port physically. Do not use the eject function on finder; using the eject function adds the files in right before it is ejected.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -169,17 +181,17 @@
                     <div class="card-body">
                         <h5 class="card-title">Prerequisites</h5>
                         <ul>
-                            <li>SD card with ModKit and desired mods</li>
+                            <li>update media with ModKit and desired mods</li>
                         </ul>
                         <h5 class="card-title">Instructions</h5>
                         <ul>
                             <li>start vehicle</li>
-                            <li>insert SD card</li>
+                            <li>insert update media</li>
                             <li>update installs automatically: MH2p will reboot a few times and show some red engineering menu pages</li>
                             <li>when update is done installing, a prompt will say "Please remove update media"</li>
-                            <li>remove SD card from vehicle</li>
+                            <li>remove update media from vehicle</li>
                             <li>MH2p will reboot into normal mode with mods installed/uninstalled</li>
-                            <li>on PC, can check SD card <code>/Logs</code> folder which has logs from each mod being installed</li>
+                            <li>on computer, can check update media <code>/Logs</code> folder which has logs from each mod being installed</li>
                         </ul>
                     </div>
                 </div>
@@ -200,7 +212,7 @@
                         <ul>
                             <li>UncleMacan (<a target="_blank" href="https://www.macanforum.com/members/unclemacan.173728/">Macan Forum</a>): worked together on Porsche CarPlay true fullscreen; wanting an easier installation method got me started making SD ModKit</li>
                             <li>lprot (<a target="_blank" href="https://github.com/lprot">GitHub</a>, <a target="_blank" href="https://www.drive2.ru/users/lprot/">DRIVE2</a>): general platform knowledge, MH2p Toolkit</li>
-                            <li>MacanPWR (<a target="_blank" href="https://www.macanforum.com/members/macanpwr.174775/">Macan Forum</a>): macOS SD card notes</li>
+                            <li>MacanPWR (<a target="_blank" href="https://www.macanforum.com/members/macanpwr.174775/">Macan Forum</a>): macOS update media notes</li>
                             <li><a target="_blank" href="https://github.com/NationalSecurityAgency/ghidra">Ghidra</a>: reverse engineering MH2p binaries</li>
                             <li><a target="_blank" href="https://github.com/Col-E/Recaf">Recaf</a>: reverse engineering & modifying for CarPlay true fullscreen</li>
                             <li>"experts" selling their "services": motivation to make CarPlay true fullscreen & SD ModKit available to all for free</li>

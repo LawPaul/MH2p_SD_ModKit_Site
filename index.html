@@ -36,7 +36,7 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>19-23</td>
+                                <td>19-25</td>
                                 <td>Porsche</td>
                                 <td>Macan</td>
                             </tr>
@@ -80,36 +80,34 @@
                         </table>
                         <h5 class="card-title">Setup</h5>
                         <ul>
-                            <li>format update media as FAT32</li>
-                            <li>extract ModKit contents onto update media</li>
-                            <li>note: <code>/Data</code> and <code>/Meta</code> must be at root of update media</li>
-                            <li>Windows notes:
+                            <li>format update media as FAT32
                                 <ul>
-                                    <li>right click the update media, choose "Format", select "FAT32" from "File System," and choose "Start".</li>
-                                </ul>
-                            </li>
-                            <li>macOS notes:
-                                <ul>
-                                    <li>use the built-in Disk Utility app to format the update media to FAT32: Applications > Utilities > Disk Utility.</li>
-                                    <li>hidden files starting with "." are created automatically; these must be removed or the auto update will not run
+                                    <li>Windows notes:
                                         <ul>
-                                            <li>option A:
-                                                <ul>
-                                                    <li>use the free 30 day trial of <a target="_blank" href="https://www.zeroonetwenty.com/blueharvest/">BlueHarvest</a> to clean the update media immediately before physically removing it</li>
-                                                </ul>
-                                            </li>
-                                            <li>option B:
-                                                <ul>
-                                                    <li>manually delete these hidden files prior to removing the update media</li>
-                                                    <li>If you don't see the hidden files, press Command then Shift then . (period) to display them (they will show up slightly greyed out)</li>
-                                                    <li>delete the files (they all start with a period)</li>
-                                                    <li>Remove the update media from the port physically. Do not use the eject function on finder; using the eject function adds the files in right before it is ejected.</li>
-                                                </ul>
-                                            </li>
+                                            <li>right click the update media, choose "Format", select "FAT32" from "File System," and choose "Start".</li>
+                                            <figure class="figure">
+                                                <img src="img/format_windows.png" class="figure-img img-fluid rounded " alt="...">
+                                                <figcaption class="figure-caption">update media: format dialog Windows</figcaption>
+                                            </figure>
+                                        </ul>
+                                    </li>
+                                    <li>macOS notes:
+                                        <ul>
+                                            <li>use the built-in Disk Utility app to format the update media to FAT32: Applications > Utilities > Disk Utility.</li>
+                                            <figure class="figure">
+                                                <img src="img/format_macos.jpg" class="figure-img img-fluid rounded " alt="...">
+                                                <figcaption class="figure-caption">update media: formatted macOS</figcaption>
+                                            </figure>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
+                            <li>extract ModKit contents onto update media</li>
+                            <li>note: <code>/Data</code> and <code>/Meta</code> must be at root of update media</li>
+                            <figure class="figure">
+                                <img src="img/folder_root_windows.png" class="figure-img img-fluid rounded " alt="...">
+                                <figcaption class="figure-caption">update media: format dialog</figcaption>
+                            </figure>
                         </ul>
                     </div>
                 </div>
@@ -121,7 +119,15 @@
                         <h5 class="card-title">Setup</h5>
                         <ul>
                             <li>download desired mod packages and extract them into the <code>/Mods</code> folder</li>
-                            <li>note: once extracted, structure must be <code>/Mods/[modname]/install.sh</code> </li>
+                            <li>note: once extracted, structure must be <code>/Mods/[modname]/install.sh</code></li>
+                            <figure class="figure">
+                                <img src="img/folder_mod_windows.png" class="figure-img img-fluid rounded " alt="...">
+                                <figcaption class="figure-caption">update media: mod folder structure Windows</figcaption>
+                            </figure>
+                            <figure class="figure">
+                                <img src="img/folder_mod_macos.jpg" class="figure-img img-fluid rounded " alt="...">
+                                <figcaption class="figure-caption">update media: mod folder structure macOS</figcaption>
+                            </figure>
                             <li>to have the mod ready for install:
                                 <ul>
                                     <li>ensure <code>install.sh</code> exists</li>
@@ -181,18 +187,85 @@
                     <div class="card-body">
                         <h5 class="card-title">Prerequisites</h5>
                         <ul>
-                            <li>update media with ModKit and desired mods</li>
+                            <li>update media with ModKit and desired mods
+                                <ul>
+                                    <li>macOS notes:
+                                        <ul>
+                                            <li>hidden files starting with "." are created automatically; these must be removed or the auto update will not run
+                                                <ul>
+                                                    <li>option A:
+                                                        <ul>
+                                                            <li>use the free 30 day trial of <a target="_blank" href="https://www.zeroonetwenty.com/blueharvest/">BlueHarvest</a> to clean the update media immediately before physically removing it</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>option B:
+                                                        <ul>
+                                                            <li>manually delete these hidden files prior to removing the update media</li>
+                                                            <li>If you don't see the hidden files, press Command then Shift then . (period) to display them (they will show up slightly greyed out)</li>
+                                                            <li>delete the files (they all start with a period)</li>
+                                                            <li>Remove the update media from the port physically. Do not use the eject function on finder; using the eject function adds the files in right before it is ejected.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                         <h5 class="card-title">Instructions</h5>
                         <ul>
                             <li>start vehicle</li>
                             <li>insert update media</li>
-                            <li>update installs automatically: MH2p will reboot a few times and show some red engineering menu pages</li>
+                            <li>within ~10 seconds, MH2p will reboot</li>
+                            <li>update installs automatically
+                                <ul>
+                                    <li>takes a few minutes</li>
+                                    <li>do not interact with MH2p during this process</li>
+                                    <li>it will reboot a few times and show some red engineering menu pages</li>
+                                </ul>
+                            </li>
                             <li>when update is done installing, a prompt will say "Please remove update media"</li>
                             <li>remove update media from vehicle</li>
                             <li>MH2p will reboot into normal mode with mods installed/uninstalled</li>
                             <li>on computer, can check update media <code>/Logs</code> folder which has logs from each mod being installed</li>
                         </ul>
+                        <h5 class="card-title">Troubleshooting</h5>
+                        <div class="accordion accordion-flush" id="accordionTroubleshooting">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        I inserted update media into the vehicle and I see "update not supported" or nothing happens.
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionTroubleshooting">
+                                    <div class="accordion-body">
+                                        <p>The update media is formatted incorrectly or the folder structure is wrong. Review the instructions and pictures.</p>
+                                        <p>macOS users: see note about the hidden files that are automatically created and using BlueHarvest to remove them immediately before removal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        I successfully ran the automatic update but there were no changes.
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionTroubleshooting">
+                                    <div class="accordion-body">Ensure you have your desired mods correctly installed in the <code>/Mods</code> folder in addition to the ModKit.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        I installed PCM5 CarPlay Full Screen and CarPlay does not show up.
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionTroubleshooting">
+                                    <div class="accordion-body">Old PCM versions (MH2p_US_P0416_P9830, MH2p_AS_PO416_P9817) are not currently compatible with the full screen mod. Use the windowed full screen mod instead for now.</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card m-3">

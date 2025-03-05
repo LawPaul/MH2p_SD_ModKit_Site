@@ -246,13 +246,13 @@
                                                 <figcaption class="figure-caption">update media: format dialog</figcaption>
                                             </figure>
                                             <li>extract desired mod packages into the <code>/Mods</code> folder</li>
-                                            <li>note: once extracted, structure must be <code>/Mods/[modname]</code></li>
+                                            <li>note: once extracted, structure must be <code>/Mods/[modname]</code>. At least one of the following folders will be inside <code>/Mods/[modname]</code>: <code>Update</code>, <code>Post</code>, <code>Persist</code></li>
                                             <figure class="figure">
                                                 <img src="img/folder_mod_windows.png" class="figure-img img-fluid rounded " alt="...">
                                                 <figcaption class="figure-caption">update media: mod folder structure Windows</figcaption>
                                             </figure>
                                             <figure class="figure">
-                                                <img src="img/folder_mod_macos.jpg" class="figure-img img-fluid rounded " alt="...">
+                                                <img src="img/folder_mod_macos.png" class="figure-img img-fluid rounded " alt="...">
                                                 <figcaption class="figure-caption">update media: mod folder structure macOS</figcaption>
                                             </figure>
                                             <li>to have the mod ready for install:
@@ -272,14 +272,19 @@
                                                 <ul>
                                                     <li>macOS notes:
                                                         <ul>
-                                                            <li>hidden files starting with "." are created automatically; these must be removed or the auto update will not run
+                                                            <li>some users run into issues with hidden files starting with "." that are created automatically; there are some tools for cleaning them up
                                                                 <ul>
-                                                                    <li>option A (recommended):
+                                                                    <li>option A:
                                                                         <ul>
                                                                             <li>use the free 30 day trial of <a target="_blank" href="https://www.zeroonetwenty.com/blueharvest/">BlueHarvest</a> to clean the update media immediately before physically removing it</li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li>option B (not recommended - only one success story):
+                                                                    <li>option B:
+                                                                        <ul>
+                                                                            <li>in Terminal, run <code>dot_clean -m [update media dir]</code></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>option C (not recommended - only one success story):
                                                                         <ul>
                                                                             <li>manually delete these hidden files prior to removing the update media</li>
                                                                             <li>If you don't see the hidden files, press Command then Shift then . (period) to display them (they will show up slightly greyed out)</li>

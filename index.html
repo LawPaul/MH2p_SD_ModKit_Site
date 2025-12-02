@@ -176,7 +176,26 @@
                                     </button>
                                 </h2>
                                 <div id="flush-collapseMac" class="accordion-collapse collapse" aria-labelledby="flush-headingMac" data-bs-parent="#accordionHowTo">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1dk1Hd8h5z8?si=bRw7-uzFe_Ji40LE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                                </div>
+                                    <div class="accordion-body">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1dk1Hd8h5z8?si=bRw7-uzFe_Ji40LE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                        <ul>
+                                            <li>on macOS, files automatically added by Apple need to be removed:
+                                                <ul>
+                                                    <li>option A:
+                                                        <ul>
+                                                            <li>use the free 30 day trial of <a target="_blank" href="https://www.zeroonetwenty.com/blueharvest/">BlueHarvest</a> to clean the update media immediately before physically removing it</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>option B:
+                                                        <ul>
+                                                            <li>in Terminal, run <code>dot_clean -m [update media dir]</code></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingText">
@@ -247,28 +266,16 @@
                                         <ul>
                                             <li>update media with Mod Kit and desired mods
                                                 <ul>
-                                                    <li>macOS notes:
+                                                    <li>on macOS, files automatically added by Apple need to be removed:
                                                         <ul>
-                                                            <li>some users run into issues with hidden files starting with "." that are created automatically; there are some tools for cleaning them up
+                                                            <li>option A:
                                                                 <ul>
-                                                                    <li>option A:
-                                                                        <ul>
-                                                                            <li>use the free 30 day trial of <a target="_blank" href="https://www.zeroonetwenty.com/blueharvest/">BlueHarvest</a> to clean the update media immediately before physically removing it</li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>option B:
-                                                                        <ul>
-                                                                            <li>in Terminal, run <code>dot_clean -m [update media dir]</code></li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>option C (not recommended - only one success story):
-                                                                        <ul>
-                                                                            <li>manually delete these hidden files prior to removing the update media</li>
-                                                                            <li>If you don't see the hidden files, press Command then Shift then . (period) to display them (they will show up slightly greyed out)</li>
-                                                                            <li>delete the files (they all start with a period)</li>
-                                                                            <li>Remove the update media from the port physically. Do not use the eject function on finder; using the eject function adds the files in right before it is ejected.</li>
-                                                                        </ul>
-                                                                    </li>
+                                                                    <li>use the free 30 day trial of <a target="_blank" href="https://www.zeroonetwenty.com/blueharvest/">BlueHarvest</a> to clean the update media immediately before physically removing it</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>option B:
+                                                                <ul>
+                                                                    <li>in Terminal, run <code>dot_clean -m [update media dir]</code></li>
                                                                 </ul>
                                                             </li>
                                                         </ul>
@@ -400,7 +407,7 @@
                                             </svg>
                                         </a>
                                     </td>
-                                    <td>changes Apple CarPlay/Android Auto/Baidu CarLife to true full screen</td>
+                                    <td>changes Apple CarPlay/Android Auto to true full screen</td>
                                 </tr>
                                 <tr>
                                     <td>CarPlay Windowed Full Screen</td>
@@ -443,7 +450,7 @@
                                             </svg>
                                         </a>
                                     </td>
-                                    <td>changes Apple CarPlay/Android Auto/Baidu CarLife to windowed full screen (still shows side & top bars)</td>
+                                    <td>changes Apple CarPlay/Android Auto to windowed full screen (still shows side & top bars)</td>
                                 </tr>
                                 <tr>
                                     <td>Apple CarPlay</td>
@@ -496,7 +503,7 @@
                                         </svg>
                                     </td>
                                     <td>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg text-warning" viewBox="0 0 16 16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg text-success" viewBox="0 0 16 16">
                                             <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                                         </svg>
                                     </td>
@@ -519,50 +526,12 @@
                                             </svg>
                                         </a>
                                     </td>
-                                    <td>activates wired Android Auto (wireless not supported) <i>*Porsche: only works with one phone, see troubleshooting</i></td>
-                                </tr>
-                                <tr>
-                                    <td>Baidu CarLife</td>
-                                    <td>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg text-success" viewBox="0 0 16 16">
-                                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-                                        </svg>
-                                    </td>
-                                    <td>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg text-success" viewBox="0 0 16 16">
-                                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-                                        </svg>
-                                    </td>
-                                    <td>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg text-success" viewBox="0 0 16 16">
-                                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-                                        </svg>
-                                    </td>
-                                    <td>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg text-success" viewBox="0 0 16 16">
-                                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-                                        </svg>
-                                    </td>
-                                    <td><a href="https://github.com/LawPaul/MH2p_BaiduCarLife/archive/refs/heads/main.zip">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
-                                            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
-                                        </svg>
-                                    </a></td>
-                                    <td></td>
-                                    <td>
-                                        <a target="_blank" href="https://github.com/LawPaul/MH2p_BaiduCarLife">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                                            </svg>
-                                        </a>
-                                    </td>
-                                    <td>activates wired (iOS/Android) & wireless (iOS) Baidu CarLife</td>
+                                    <td>activates wired Android Auto (wireless not supported)</td>
                                 </tr>
                                 <tr>
                                     <td>Navigation Compass Ignore</td>
                                     <td>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg text-warning" viewBox="0 0 16 16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg text-success" viewBox="0 0 16 16">
                                             <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                                         </svg>
                                     </td>
@@ -600,45 +569,7 @@
                                             </svg>
                                         </a>
                                     </td>
-                                    <td>allows showing internal maps in instrument cluster when phone navigation is running <i>*does not work on all Audis, not written by me</i></td>
-                                </tr>
-                                <tr>
-                                    <td>Green Engineering Menu</td>
-                                    <td>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg text-warning" viewBox="0 0 16 16">
-                                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-                                        </svg>
-                                    </td>
-                                    <td>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg text-warning" viewBox="0 0 16 16">
-                                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-                                        </svg>
-                                    </td>
-                                    <td>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg text-warning" viewBox="0 0 16 16">
-                                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-                                        </svg>
-                                    </td>
-                                    <td>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg text-warning" viewBox="0 0 16 16">
-                                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-                                        </svg>
-                                    </td>
-                                    <td><a href="https://github.com/LawPaul/MH2p_GreenEngineeringMenu/archive/refs/heads/main.zip">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
-                                            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
-                                        </svg>
-                                    </a></td>
-                                    <td></td>
-                                    <td>
-                                        <a target="_blank" href="https://github.com/LawPaul/MH2p_GreenEngineeringMenu">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                                            </svg>
-                                        </a>
-                                    </td>
-                                    <td>activates Green Engineering Menu (two finger touch in bottom right to open) <i>*contact me if you want to test, exposes potentially dangerous settings</i></td>
+                                    <td>shows MH2p maps in instrument cluster when phone navigation is running</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -720,7 +651,7 @@
                                     </button>
                                 </h2>
                                 <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionTroubleshooting">
-                                    <div class="accordion-body">Porsche: Due to a bug in PCM 5, if iPhone (or second Android phone) was ever connected, you must factory reset MH2p (menus depend on year/make/model, ex: Car>Control>System>Factory settings).</div>
+                                    <div class="accordion-body">Confirm your cable supports data and is not power only.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">

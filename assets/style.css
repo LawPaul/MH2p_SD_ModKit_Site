@@ -1,0 +1,2 @@
+#mods-list .mod-row { display:flex; align-items:center; justify-content:space-between; padding:0.35rem 0.5rem; }
+#mods-list .mod-row .left { display:flex; gap:0.75rem; align-items:center; }

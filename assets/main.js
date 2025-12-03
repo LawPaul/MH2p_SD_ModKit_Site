@@ -177,9 +177,6 @@
       const row = document.createElement('div');
       row.className = 'mod-row';
 
-      const left = document.createElement('div');
-      left.className = 'left';
-
       const checkbox = document.createElement('input');
       checkbox.type = 'checkbox';
       checkbox.id = 'mod-' + mod.id;
@@ -190,19 +187,16 @@
       name.className = 'name';
       name.textContent = mod.name;
 
-      left.appendChild(checkbox);
-      left.appendChild(name);
+      row.appendChild(checkbox);
+      row.appendChild(name);
 
       const descEl = document.createElement('div');
       descEl.className = 'small text-muted';
       descEl.textContent = mod.description || '';
 
-      // place description under the name on the left instead of right-aligning it
       const descWrapper = document.createElement('div');
       descWrapper.appendChild(descEl);
-      left.appendChild(descWrapper);
-
-      row.appendChild(left);
+      row.appendChild(descWrapper);
 
       container.appendChild(row);
     });

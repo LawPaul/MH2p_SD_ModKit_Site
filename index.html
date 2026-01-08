@@ -4,25 +4,21 @@
     <meta charset="UTF-8">
     <title>MH2p Mod Kit</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <style>
-        .alert-discord {
-            color:#E0E3FF;
-            background-color:#5865F2;
-        }
-    </style>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body data-bs-theme="dark">
     <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">MH2p Mod Kit - licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> - NOT FOR COMMERCIAL USE</span>
+        <div class="container-fluid justify-content-start">
+            <span class="navbar-brand">MH2p Mod Kit</span>
+             <span class="navbar-text">
+                licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> - NOT FOR COMMERCIAL USE</span>
+             </span>
         </div>
     </nav>
     <div class="container">
         <div class="row">
             <div class="col">
-                <br/>
-                <div class="alert alert-discord" role="alert">
+                <div class="alert alert-discord m-3" role="alert">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
                         <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
                     </svg>
@@ -31,9 +27,9 @@
                     </a>
                 </div>
                 <div class="card m-3" id="bundle-builder">
-                    <div class="card-header">
-                        <h5 class="card-title">Mods</h5>
-                    </div>
+                    <h5 class="card-header">
+                        Mods
+                    </h5>
                     <div class="card-body">
                         <p class="card-text">Select vehicle brand and desired mods. Download the bundle and unzip onto a FAT32 formatted SD card or flash drive. Insert into your vehicle while it is running.</p>
 
@@ -48,15 +44,15 @@
                     </div>
                 </div>
                 <div class="card m-3">
-                    <div class="card-header">
-                        <h5 class="card-title">Installation</h5>
-                    </div>
+                    <h5 class="card-header">
+                        Installation
+                    </h5>
                     <div class="card-body">
                         <div class="accordion" id="accordionCompatibleVehicles">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingCVOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCVOne" aria-expanded="false" aria-controls="flush-collapseCVOne">
-                                        <h5 class="card-title">Compatible Vehicles</h5>
+                                        Compatible Vehicles
                                     </button>
                                 </h2>
                                 <div id="flush-collapseCVOne" class="accordion-collapse collapse" aria-labelledby="flush-headingCVOne" data-bs-parent="#accordionCompaibleVehicles">
@@ -162,7 +158,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h5 class="card-title">Necessary Hardware</h5>
+                        <h5>Necessary Hardware</h5>
                         <ul>
                             <li>update media (SD card or flash drive - see which ports your vehicle has in the center console or glove box, <32 GB is easier, mod kit and mods are <1 MB)</li>
                             <li>Computer that can connect to update media (Windows is easiest)</li>
@@ -171,7 +167,7 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingWin">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseWin" aria-expanded="false" aria-controls="flush-collapseWin">
-                                        <h5 class="card-title">Windows Video Guide</h5>
+                                        Windows Video Guide
                                     </button>
                                 </h2>
                                 <div id="flush-collapseWin" class="accordion-collapse collapse show" aria-labelledby="flush-headingWindows" data-bs-parent="#accordionHowTo">
@@ -183,7 +179,7 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingMac">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMac" aria-expanded="false" aria-controls="flush-collapseMac">
-                                        <h5 class="card-title">macOS Video Guide</h5>
+                                        macOS Video Guide
                                     </button>
                                 </h2>
                                 <div id="flush-collapseMac" class="accordion-collapse collapse" aria-labelledby="flush-headingMac" data-bs-parent="#accordionHowTo">
@@ -195,16 +191,16 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingText">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseText" aria-expanded="false" aria-controls="flush-collapseText">
-                                        <h5 class="card-title">Windows Text Guide</h5>
+                                        Windows Text Guide
                                     </button>
                                 </h2>
                                 <div id="flush-collapseText" class="accordion-collapse collapse" aria-labelledby="flush-headingText" data-bs-parent="#accordionHowTo">
                                     <div class="accordion-body">
-                                        <h5 class="card-title">Prerequisites</h5>
+                                        <h5>Prerequisites</h5>
                                         <ul>
                                             <li>Mods bundle downloaded (see Mods section above)</li>
                                         </ul>
-                                        <h5 class="card-title">Update Media Setup</h5>
+                                        <h5>Update Media Setup</h5>
                                         <ul>
                                             <li>format update media as FAT32
                                                 <ul>
@@ -232,12 +228,12 @@
                                                 </ul>
                                             </li>
                                         </ul>
-                                        <h5 class="card-title">Vehicle Installation Prerequisites</h5>
+                                        <h5>Vehicle Installation Prerequisites</h5>
                                         <ul>
                                             <li>update media with mods bundle
                                             </li>
                                         </ul>
-                                        <h5 class="card-title">Vehicle Installation</h5>
+                                        <h5>Vehicle Installation</h5>
                                         <ul>
                                             <li>start vehicle</li>
                                             <li>insert update media
@@ -264,7 +260,7 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingTextMacOs">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTextMacOs" aria-expanded="false" aria-controls="flush-collapseTextMacOs">
-                                        <h5 class="card-title">macOS Text Guide</h5>
+                                        macOS Text Guide
                                     </button>
                                 </h2>
                                 <div id="flush-collapseTextMacOs" class="accordion-collapse collapse" aria-labelledby="flush-headingTextMacOs" data-bs-parent="#accordionHowTo">
@@ -350,9 +346,9 @@
                     </div>
                 </div>
                 <div class="card m-3">
-                    <div class="card-header">
-                        <h5 class="card-title">Troubleshooting</h5>
-                    </div>
+                    <h5 class="card-header">
+                        Troubleshooting
+                    </h5>
                     <div class="card-body">
                         <div class="accordion" id="accordionTroubleshooting">
                             <div class="accordion-item">
@@ -363,8 +359,8 @@
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionTroubleshooting">
                                     <div class="accordion-body">
-                                        <p>The update media is formatted incorrectly or the folder structure is wrong. Review the instructions and pictures.</p>
-                                        <p>macOS users: see note about the hidden files that are automatically created and using BlueHarvest to remove them immediately before removal.</p>
+                                        The update media is formatted incorrectly or the folder structure is wrong. Review the instructions and pictures.<br/><br/>
+                                        macOS users: see note about the hidden files that are automatically created and using BlueHarvest to remove them immediately before removal.
                                     </div>
                                 </div>
                             </div>
@@ -442,18 +438,18 @@
                     </div>
                 </div>
                 <div class="card m-3">
-                    <div class="card-header">
-                        <h5 class="card-title">Donations</h5>
-                    </div>
+                    <h5 class="card-header">
+                        Donations
+                    </h5>
                     <div class="card-body">
                         <p class="card-text">If you are considering donating to this project, I recommend donating to a local charity to help your community. If you still insist on donating, it is appreciated. This is a hobby project that has taken quite a bit of time and a litle money to make a reality!</p>
                         <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'I3I01B3M01');kofiwidget2.draw();</script>
                     </div>
                 </div>
                 <div class="card m-3">
-                    <div class="card-header">
-                        <h5 class="card-title">Contact</h5>
-                    </div>
+                    <h5 class="card-header">
+                        Contact
+                    </h5>
                     <div class="card-body">
                         The best way to get in contact with me is through the <a href="https://discord.gg/NPZG5EEHtX" class="card-link">MH2p Mod Kit Discord Server</a>
                         <br/>
@@ -471,17 +467,17 @@
                 </div>
 
                 <div class="card m-3">
-                    <div class="card-header">
-                        <h5 class="card-title">Developers</h5>
-                    </div>
+                    <h5 class="card-header">
+                        Developers
+                    </h5>
                     <div class="card-body">
                         <p class="card-text">Check the Mod Kit and existing mods for documentation and references. Feel free to contact me with any questions or to have your mod included on this page.</p>
                     </div>
                 </div>
                 <div class="card m-3">
-                    <div class="card-header">
-                        <h5 class="card-title">Credits</h5>
-                    </div>
+                    <h5 class="card-header">
+                       Credits
+                    </h5>
                     <div class="card-body">
                         <p class="card-text">The users and tools that helped make this happen.</p>
                         <ul>
@@ -504,7 +500,7 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js" integrity="sha384-+mbV2IY1Zk/X1p/nWllGySJSUN8uMs+gUAN10Or95UBH0fpj6GfKgPmgC5EXieXG" crossorigin="anonymous"></script>
     <script src="assets/main.js"></script>
 </body>
 </html>

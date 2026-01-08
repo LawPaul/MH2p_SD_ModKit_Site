@@ -1,2 +1,7 @@
 #mods-list .mod-row { display:flex; align-items:center; padding:0.35rem 0.5rem; gap:0.5rem; }
 #mods-list .mod-row .form-check-input { flex-shrink: 0; }
+
+.alert-discord {
+    color:#E0E3FF;
+    background-color:#5865F2;
+}
